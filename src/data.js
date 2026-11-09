@@ -6,30 +6,12 @@
    ============================================================ */
 
 export const topInfo = [
-  "Need help? Call us 112233344455",
-  "Summer sale discount off 60% off! Shop Now",
-  "2-3 business days delivery & free returns",
+  { id: 1, text: "Need help? Call us", link: { label: "112233344455", href: "tel:112233344455" } },
+  { id: 2, text: "Summer sale discount off 60% off!", link: { label: "Shop Now", to: "/shop" } },
+  { id: 3, text: "2-3 business days delivery & free returns", link: null },
 ];
-
 export const logo = "ShopLite";
 
-export const navigation = [
-  { name: "Home", to: "/" },
-  { name: "About", to: "/about" },
-  { name: "Shop", to: "/shop" },
-  { name: "Blogs", to: "/blog" },
-  {
-    name: "Pages",
-    to: null,
-    children: [
-      { name: "Product", to: "/shop/1" },
-      { name: "Cart", to: "/cart" },
-      { name: "Checkout", to: "/checkout" },
-      { name: "Blog post", to: "/blog/1" },
-    ],
-  },
-  { name: "Contact", to: "/contact" },
-];
 
 export const features = [
   { id: 1, title: "Free delivery", text: "Consectetur adipi elit lorem ipsum dolor sit amet." },
@@ -126,11 +108,10 @@ export const products = [
    ============================================================ */
 
 export const home = {
-  hero: {
-    title: "GoPro hero9 Black",
-    text: "Limited stocks available. Grab it now!",
-    button: "Shop collection",
-  },
+  heroSlides: [
+    { id: 1, title: "GoPro hero9 Black", text: "Limited stocks available. Grab it now!", button: "Shop collection", to: "/shop" },
+    { id: 2, title: "Apple Watch 2nd Gen", text: "New colors are here. Order today!", button: "Shop collection", to: "/shop" },
+  ],
   categories: {
     title: "Categories",
     items: ["Phones", "PlayStations", "Digital watches", "Joysticks", "EarPods", "Laptops"],

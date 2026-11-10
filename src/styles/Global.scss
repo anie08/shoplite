@@ -64,6 +64,9 @@ ul.li {
 }
 
 img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
   vertical-align: top;
 }
 
@@ -99,8 +102,8 @@ body {
   width: 100%;
   max-width: 1580px;
   margin: 0 auto;
-  padding-right:  180px;
-  padding-left:  180px;
+  padding-right: 100px;
+  padding-left: 100px;
 
   @media (max-width: 1199px) {
     padding: 0 30px;
@@ -110,6 +113,7 @@ body {
     padding: 0 16px;
   }
 }
+
 h1,
 h2,
 h3,
@@ -118,6 +122,7 @@ h5,
 h6 {
   margin: 0;
 }
+
 :root {
   --color-text: #272727;
   --color-accent: #ff6543;

@@ -1,0 +1,27 @@
+.features_inner {
+  display: flex;
+  gap: 20px;
+}
+
+.features_item {
+  display: flex;
+  gap: 10px;
+  width: calc((100% - 3 * 20px) / 4);
+}
+
+.features_icon {
+  display: flex;
+  font-size: 36px;
+  color: #ff6543;
+}
+
+.features_context {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.features_title {
+  font-size: 22px;
+  text-transform: uppercase;
+}

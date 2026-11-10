@@ -1,5 +1,7 @@
 // All texts from the ShopLite Figma design (all 9 pages).
-// Product images live in /public/images/products/<category>/ — use the path as-is: <img src={item.image} />
+// Images live in /public/images/... — use the path as-is: <img src={item.image} />
+// Icons are Iconify names — use them as: <Icon icon={item.icon} /> (import { Icon } from "@iconify/react")
+// The hero image is in src/assets/images/ and is imported directly in Hero.jsx.
 
 /* ============================================================
    SHARED (used on every page)
@@ -14,27 +16,31 @@ export const logo = "ShopLite";
 
 
 export const features = [
-  { id: 1, title: "Free delivery", text: "Consectetur adipi elit lorem ipsum dolor sit amet." },
-  { id: 2, title: "Quality guarantee", text: "Dolor sit amet orem ipsu mcons ectetur adipi elit." },
-  { id: 3, title: "Daily offers", text: "Amet consectetur adipi elit loreme ipsum dolor sit." },
-  { id: 4, title: "100% secure payment", text: "Rem Lopsum dolor sit amet, consectetur adipi elit." },
+  { id: 1, icon: "solar:cart-large-minimalistic-outline", title: "Free delivery", text: "Consectetur adipi elit lorem ipsum dolor sit amet." },
+  { id: 2, icon: "solar:cup-outline", title: "Quality guarantee", text: "Dolor sit amet orem ipsu mcons ectetur adipi elit." },
+  { id: 3, icon: "solar:tag-price-outline", title: "Daily offers", text: "Amet consectetur adipi elit loreme ipsum dolor sit." },
+  { id: 4, icon: "solar:chat-round-check-outline", title: "100% secure payment", text: "Rem Lopsum dolor sit amet, consectetur adipi elit." },
 ];
 
 export const customerReviews = {
   title: "Customers reviews",
+  starIcon: "solar:star-bold",
   reviews: [
     {
       id: 1,
+      rating: 5,
       name: "Emma Chamberlin",
       text: "I stumbled upon this tech store while searching for a new laptop, and I couldn't be happier with my experience! The staff was incredibly knowledgeable and guided me through the process of choosing the perfect device for my needs. Highly recommended!",
     },
     {
       id: 2,
+      rating: 5,
       name: "Thomas John",
       text: "This tech store is my go-to for all things tech! Whether it's a new smartphone, accessories, or even troubleshooting advice, they've always got me covered. The staff is friendly, and their expertise is unmatched. Trust me; you won't regret shopping here!",
     },
     {
       id: 3,
+      rating: 5,
       name: "Kevin Bryan",
       text: "I recently purchased a smartwatch from this tech store, and I'm absolutely thrilled with my purchase! Not only did they have an extensive selection to choose from, but their team helped me find the perfect fit for my lifestyle.",
     },
@@ -45,12 +51,27 @@ export const brands = ["techlight", "MiniStore.", "Ultras", "Swanky", "Emily"];
 
 export const instagram = {
   title: "instagram #shoplite",
+  images: [
+    { id: 1, image: "/images/gallery/desk-ipad.jpg", alt: "Desk with iPad and plant" },
+    { id: 2, image: "/images/gallery/watch-stones.jpg", alt: "Smart watch" },
+    { id: 3, image: "/images/products/audio/airpods-pro.png", alt: "AirPods" },
+    { id: 4, image: "/images/gallery/desk-gadgets.jpg", alt: "Desk with gadgets" },
+    { id: 5, image: "/images/gallery/phone-on-table.jpg", alt: "Phone on table" },
+    { id: 6, image: "/images/gallery/macbook-silver.jpg", alt: "MacBook" },
+  ],
 };
 
 export const footer = {
   logo: "ShopLite",
   about:
     "Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit. Gravida massa volutpat aenean odio erat nullam fringilla.",
+  socials: [
+    { name: "Facebook", icon: "ri:facebook-fill", href: "#" },
+    { name: "Instagram", icon: "ri:instagram-line", href: "#" },
+    { name: "Twitter", icon: "ri:twitter-fill", href: "#" },
+    { name: "LinkedIn", icon: "ri:linkedin-fill", href: "#" },
+    { name: "YouTube", icon: "ri:youtube-fill", href: "#" },
+  ],
   quickLinks: {
     title: "Quick links",
     links: [
@@ -79,8 +100,9 @@ export const footer = {
     phone: "+55 111 222 333 44",
   },
   shipWith: "We ship with:",
+  shipIcons: ["fa-brands:dhl", "arcticons:post"],
   paymentOptions: "Payment options:",
-  paymentIcons: ["visa", "mastercard", "paypal"],
+  paymentIcons: ["brandico:visa", "brandico:mastercard", "fontisto:paypal"],
   copyright: "© Copyright 2024 ShopLite. Design by TemplatesJungle",
 };
 
@@ -114,7 +136,14 @@ export const home = {
   ],
   categories: {
     title: "Categories",
-    items: ["Phones", "PlayStations", "Digital watches", "Joysticks", "EarPods", "Laptops"],
+    items: [
+      { id: 1, name: "Phones", image: "/images/categories/phones.png" },
+      { id: 2, name: "PlayStations", image: "/images/categories/playstations.png" },
+      { id: 3, name: "Digital watches", image: "/images/categories/digital-watches.png" },
+      { id: 4, name: "Joysticks", image: "/images/categories/joysticks.png" },
+      { id: 5, name: "EarPods", image: "/images/categories/earpods.png" },
+      { id: 6, name: "Laptops", image: "/images/categories/laptops.png" },
+    ],
   },
   bestSelling: {
     title: "Best selling items",
@@ -130,33 +159,33 @@ export const home = {
     {
       title: "Featured",
       items: [
-        { name: "Wireless headset", price: 500 },
-        { name: "Iphone x Pro Max", price: 820 },
-        { name: "Iphone 11 Pro", price: 960 },
+        { id: 1, name: "Wireless headset", price: 500, image: "/images/products/audio/wireless-headset.jpg" },
+        { id: 2, name: "Iphone x Pro Max", price: 820, image: "/images/products/phones/iphone-x-pro-max.jpg" },
+        { id: 3, name: "Iphone 11 Pro", price: 960, image: "/images/gallery/phone-on-table.jpg" },
       ],
     },
     {
       title: "Latest items",
       items: [
-        { name: "Apple airPod", price: 450 },
-        { name: "Screen touch watch", price: 750 },
-        { name: "Digital watch", price: 660 },
+        { id: 4, name: "Apple airPod", price: 450, image: "/images/products/audio/apple-airpod.jpg" },
+        { id: 5, name: "Screen touch watch", price: 750, image: "/images/products/watches/screen-touch-watch.jpg" },
+        { id: 6, name: "Digital watch", price: 660, image: "/images/products/watches/digital-watch.jpg" },
       ],
     },
     {
       title: "Best reviewed",
       items: [
-        { name: "Wireless Joysticks", price: 350 },
-        { name: "Apple White AirPod", price: 330 },
-        { name: "Gimbal stabilizer", price: 920 },
+        { id: 7, name: "Wireless Joysticks", price: 350, image: "/images/products/accessories/wireless-joysticks.jpg" },
+        { id: 8, name: "Apple White AirPod", price: 330, image: "/images/products/audio/apple-white-airpod.jpg" },
+        { id: 9, name: "Gimbal stabilizer", price: 920, image: "/images/products/accessories/gimbal-stabilizer.jpg" },
       ],
     },
     {
       title: "On sale",
       items: [
-        { name: "Iphone 15 pro max", oldPrice: 1666, price: 999 },
-        { name: "White AirPods", oldPrice: 500, price: 410 },
-        { name: "Security CCTV camera", oldPrice: 600, price: 500 },
+        { id: 10, name: "Iphone 15 pro max", oldPrice: 1666, price: 999, image: "/images/products/phones/iphone-15-pro-max-camera.jpg" },
+        { id: 11, name: "White AirPods", oldPrice: 500, price: 410, image: "/images/products/audio/white-airpods.jpg" },
+        { id: 12, name: "Security CCTV camera", oldPrice: 600, price: 500, image: "/images/products/accessories/security-cctv-camera.jpg" },
       ],
     },
   ],
@@ -170,6 +199,8 @@ export const about = {
   title: "About us",
   breadcrumbs: "Home > About us",
   heading: "Best Digital Store BasicStore",
+  videoImage: "/images/gallery/desk-gadgets.jpg",
+  playIcon: "solar:play-outline",
   text: "Risus augue curabitur diam senectus congue velit et. Sed vitae metus nibh sit era. Nulla adipiscing pharetra pellentesque maecenas odio eros at. Et libero vulputate amet duis erat volutpat vitae eget. Sed vitae metus nibh sit era. Nulla adipiscing pharetra eros at. Nulla adipiscing pharetra pellentesque maecenas odio eros at. Et libero vulputate amet duis erat volutpat vitae eget. Quam libero etiam et in ac at quis. Risus augue curabitur diam senectus congue velit et.",
   button: "Go to Shop",
 };
@@ -218,6 +249,11 @@ export const shop = {
 export const productPage = {
   name: "Iphone 15 Pro Max",
   price: "$2000.00",
+  images: [
+    "/images/products/phones/iphone-15-pro-max.png",
+    "/images/products/phones/iphone-15-pro-max-2.png",
+    "/images/products/phones/iphone-15-pro-max-3.png",
+  ],
   shortText:
     "Justo, cum feugiat imperdiet nulla molestie ac vulputate scelerisque amet. Bibendum adipiscing platea blandit sit sed quam semper rhoncus.",
   colors: { title: "Color", items: ["Orange", "Green", "Blue", "Black"] },
@@ -234,12 +270,16 @@ export const productPage = {
     {
       id: 1,
       name: "Emma Chamberlin",
+      avatar: "/images/people/avatar-1.jpg",
+      rating: 5,
       date: "11/22/2022",
       text: "Vitae tortor condimentum lacinia quis vel eros donec ac. Nam at lectus urna duis convallis convallis",
     },
     {
       id: 2,
       name: "Thompson J.",
+      avatar: "/images/people/avatar-2.jpg",
+      rating: 5,
       date: "11/22/2022",
       text: "Vitae tortor condimentum lacinia quis vel eros donec ac. Nam at lectus urna duis convallis convallis",
     },
@@ -269,8 +309,8 @@ export const productPage = {
 export const cart = {
   columns: ["Product", "Quantity", "Subtotal"],
   exampleItems: [
-    { name: "Iphone 15 pro max", price: 2000, quantity: 1 },
-    { name: "Apple Watch (2nd Gen)", price: 400, quantity: 1 },
+    { id: 1, name: "Iphone 15 pro max", price: 2000, quantity: 1, image: "/images/products/phones/iphone-15-pro-max.png" },
+    { id: 2, name: "Apple Watch (2nd Gen)", price: 400, quantity: 1, image: "/images/products/watches/apple-watch-2nd-gen.png" },
   ],
   totals: {
     title: "Cart totals",
@@ -327,6 +367,7 @@ export const posts = [
   {
     id: 1,
     category: "Gadgets",
+    image: "/images/gallery/ipad-keyboard.jpg",
     date: "feb 22, 2023",
     title: "5 Must-Have Gadgets for the Modern Home",
     text: "Dive into the world of cutting-edge technology with our latest blog post, where we highlight five essential gadgets every modern home should have. From smart assistants to home security systems, discover how these innovations can enhance your daily life and bring convenience to your fingertips.",
@@ -334,6 +375,7 @@ export const posts = [
   {
     id: 2,
     category: "Phones",
+    image: "/images/products/phones/iphone-15-pro-max-3.png",
     date: "feb 22, 2023",
     title: "Eco-Friendly Innovations Making a Difference",
     text: "Explore the intersection of technology and sustainability in our latest blog post. Learn about the innovative eco-friendly technologies revolutionizing various industries, from renewable energy solutions to recyclable electronics. Discover how these advancements are paving the way for a more sustainable future.",
@@ -341,6 +383,7 @@ export const posts = [
   {
     id: 3,
     category: "Tech",
+    image: "/images/products/laptops/macbook-setup.jpg",
     date: "feb 22, 2023",
     title: "The Future of Wearable Tech: Trends to Watch",
     text: "Stay ahead of the curve with our insightful look into the rapidly evolving landscape of wearable technology. Explore the latest trends, from health monitoring devices to fashion-forward wearables, and learn how these advancements are shaping the future of personal technology",
@@ -348,6 +391,7 @@ export const posts = [
   {
     id: 4,
     category: "Digital Watch",
+    image: "/images/gallery/watch-stones.jpg",
     date: "feb 22, 2023",
     title: "Top Apps and Tools for Remote Work",
     text: "In today's remote work environment, productivity is key. Discover the top apps and tools that can help you stay organized, focused, and efficient while working from home. From project management platforms to time-tracking apps, find out which tools are essential for maximizing your productivity.",
@@ -371,6 +415,9 @@ export const blog = {
 export const blogPost = {
   meta: "feb 22, 2023 - technology",
   title: "5 Must-Have Gadgets for the Modern Home",
+  image: "/images/gallery/ipad-keyboard.jpg",
+  sectionImage: "/images/products/phones/iphone-15-pro-max-camera.jpg",
+  tags: ["Tag", "Tag", "Tag"],
   paragraphs: [
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur facilisis vivamus massa magna. Blandit mauris libero condimentum commodo morbi consectetur sociis convallis sit. Magna diam amet justo sed vel dolor et volutpat integer. Iaculis sit sapien hac odio elementum egestas neque. Adipiscing purus euismod orci sem amet, et. Turpis erat ornare nisi laoreet est euismod. Sit suscipit tortor turpis sed fringilla lectus facilisis amet. Ipsum, amet dolor curabitur non aliquet orci urna volutpat. Id aliquam neque, ut vivamus sit imperdiet enim, lacus, vel. Morbi arcu amet, nulla fermentum vitae mattis arcu mi convallis. Urna in sollicitudin in vestibulum erat. Turpis faucibus augue ipsum, at aliquam. Cras sagittis tellus nunc integer vitae neque bibendum eget. Tempus malesuada et pellentesque maecenas. Sociis porttitor elit tincidunt tellus sit ornare. Purus ut quis sed venenatis eget ut ipsum, enim lacus. Praesent imperdiet vitae eu, eu tincidunt nunc integer sit.",
   ],
@@ -393,9 +440,9 @@ export const blogPost = {
   next: { label: "Next", title: "Best airpod that you must get it" },
   commentsTitle: "3 Comments",
   comments: [
-    { id: 1, name: "Sam smith", date: "Jul 10", text: "Mattis pulvinar non viverra donec pellentesque. Odio mi consequat libero dolor. Porta ut diam lobortis eget leo, lectus. Tortor diam dignissim amet, in interdum aliquet. Nascetur libero elementum adipiscing mauris maecenas et magna. Etiam nec, rutrum a diam lacus, nunc integer etiam.", isReply: false },
-    { id: 2, name: "Santie mary", date: "Jul 10", text: "Mattis pulvinar non viverra donec pellentesque. Odio mi consequat libero dolor. Porta ut diam lobortis eget leo, lectus. Tortor diam dignissim amet, in interdum aliquet. Nascetur libero elementum adipiscing mauris maecenas et magna. Etiam nec, rutrum a diam lacus, nunc integer etiam.", isReply: true },
-    { id: 3, name: "Analisa nora", date: "Jul 10", text: "Mattis pulvinar non viverra donec pellentesque. Odio mi consequat libero dolor. Porta ut diam lobortis eget leo, lectus. Tortor diam dignissim amet, in interdum aliquet. Nascetur libero elementum adipiscing mauris maecenas et magna. Etiam nec, rutrum a diam lacus, nunc integer etiam.", isReply: false },
+    { id: 1, name: "Sam smith", avatar: "/images/people/person-1.jpg", date: "Jul 10", text: "Mattis pulvinar non viverra donec pellentesque. Odio mi consequat libero dolor. Porta ut diam lobortis eget leo, lectus. Tortor diam dignissim amet, in interdum aliquet. Nascetur libero elementum adipiscing mauris maecenas et magna. Etiam nec, rutrum a diam lacus, nunc integer etiam.", isReply: false },
+    { id: 2, name: "Santie mary", avatar: "/images/people/person-2.jpg", date: "Jul 10", text: "Mattis pulvinar non viverra donec pellentesque. Odio mi consequat libero dolor. Porta ut diam lobortis eget leo, lectus. Tortor diam dignissim amet, in interdum aliquet. Nascetur libero elementum adipiscing mauris maecenas et magna. Etiam nec, rutrum a diam lacus, nunc integer etiam.", isReply: true },
+    { id: 3, name: "Analisa nora", avatar: "/images/people/person-3.jpg", date: "Jul 10", text: "Mattis pulvinar non viverra donec pellentesque. Odio mi consequat libero dolor. Porta ut diam lobortis eget leo, lectus. Tortor diam dignissim amet, in interdum aliquet. Nascetur libero elementum adipiscing mauris maecenas et magna. Etiam nec, rutrum a diam lacus, nunc integer etiam.", isReply: false },
   ],
   replyButton: "Reply now",
   commentForm: {
@@ -436,6 +483,7 @@ export const contact = {
   },
   stores: {
     title: "Our stores",
+    image: "/images/gallery/desk-ipad.jpg",
     text: "You can also directly buy products from our stores.",
     items: [
       { country: "USA", address: "730 Glenstone Ave 65802, US", phone: "+123 666 777 88", email: "info@yourinfo.com" },

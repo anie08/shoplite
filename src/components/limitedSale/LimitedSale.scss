@@ -1,0 +1,79 @@
+.limited-sale{
+  background-color: #F8F8F8;
+}
+.limited-sale_img-box{
+  width: 100%;
+  max-width: 676px;
+  aspect-ratio: 676/504;
+  min-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 676px
+}
+.limited-sale_img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.limited-sale_inner{
+  display: flex;
+  align-items: center;
+  gap:200px;
+  justify-content: space-between;
+  padding: 140px 0;
+}
+.limited-sale_content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 36px;
+  max-width: 571px;
+}
+.limited-sale_unit{
+  display: flex;
+  flex-direction: column;
+  align-items: center;}
+.limited-sale_timer{
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;}
+.limited-sale_title {
+  font-size: 51px;
+  font-weight: 200;
+  line-height: 1;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #272727;
+}
+
+
+.limited-sale_value {
+  font-size: 51px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.06em;
+}
+
+.limited-sale_label {
+  font-size: 21px;
+  font-weight: 200;
+}
+
+.limited-sale_colon {
+  font-size: 51px;
+  font-weight: 200;
+  line-height: 1;
+  color: #ff6543;
+}
+
+.limited-sale_btn {
+  padding: 18px 42px;
+  border-radius: 200px;
+  background-color: #ff6543;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}

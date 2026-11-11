@@ -1,23 +1,18 @@
 import "./Categories.scss";
 import { home } from "../../data.js";
-
+import Card from "../card/Card.jsx";
+import SectionTitle from "../sectionTitle/SectionTitle.jsx";
 const Categories = () => {
     return (
         <section className="categories">
             <div className="categories_inner container">
                 <div className="categories_head">
-                    <h2 className="categories_title">{home.categories.title}</h2>
-                    <span className="categories_line">{"/".repeat(150)}</span>
+                    <SectionTitle title={home.categories.title} />
                 </div>
                 <div className="categories_list">
-                {home.categories.items.map((item) => (
-                    <div className="categories_item" key={item.id}>
-                        <div className="categories_img-box">
-                            <img className="categories_img" src={item.image} alt={item.name} />
-                        </div>
-                        <p className="categories_name">{item.name}</p>
-                    </div>
-                ))}
+                    {home.categories.items.map((item) => (
+                        <Card key={item.id} image={item.image} name={item.name} />
+                    ))}
             </div>
             </div>
         </section>

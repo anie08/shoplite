@@ -9,20 +9,7 @@
   flex-direction: column;
   gap: 39px; }
 
-.categories_head {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  overflow: hidden; }
-.categories_title { font-size: 30px;
-  font-weight: 200;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-.categories_line { font-size: 19px;
-  font-weight: 200;
-  color: #d0d0d0;
-  white-space: nowrap; }
+
 
 .categories_list { display: flex;
   gap: 20px; }
@@ -47,4 +34,3 @@ aspect-ratio: 172/195;
   justify-content: center;
   align-items: center;
 }
-.categories_name { font-size: 21px; font-weight: 300; text-align: center; }

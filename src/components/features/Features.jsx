@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import "./Features.scss";
-import {features, home} from "../../data.js";
+import {features, } from "../../data.js";
 
 const Features = () => {
     return (

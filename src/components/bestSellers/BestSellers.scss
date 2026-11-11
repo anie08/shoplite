@@ -1,0 +1,39 @@
+
+
+
+.best-sellers_inner{
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+}
+.best-sellers_slider .card {
+  width: 100%;
+}
+
+.best-sellers_slider-box{
+  position: relative;
+}
+.best-sellers_arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: none;
+  color: #bdbdbd;
+  font-size: 26px;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  &--prev { left: -70px; }
+  &--next { right: -70px; }
+  @media (max-width: 1199px) {
+    &--prev { left: 0; }
+    &--next { right: 0; }
+  }
+}

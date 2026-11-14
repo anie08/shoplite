@@ -39,4 +39,23 @@
   font-weight: 300;
   color: #ff6543;
 }
+.card_info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.card_prices {
+  display: flex;
+  gap: 8px;
+}
+
+.card_old-price {
+  font-size: 21px;
+  font-weight: 300;
+  color: #bdbdbd;
+  text-decoration: line-through;
+}
 

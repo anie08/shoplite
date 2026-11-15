@@ -35,6 +35,7 @@
   color: #272727;
   background: none;
   cursor: pointer;
+  padding: 10px;
 
   &--active {
     color: #ff6543;
@@ -47,6 +48,7 @@
   color: #272727;
   background: none;
   cursor: pointer;
+  padding: 10px;
 }
 .header-nav_item{
   text-decoration: none;
@@ -56,12 +58,11 @@
 .header-nav_list{
   display: flex;
   flex-direction: row;
-gap: 40px;
-}
+  gap: 20px;}
 .header-nav_icons{
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 0;
 }
 .header-nav_icon-item{
   display: flex;
@@ -71,8 +72,8 @@ gap: 40px;
 }
 .header-nav_inner {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 20px;
+
 }

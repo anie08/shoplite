@@ -1,0 +1,54 @@
+
+.brands {
+  padding: 100px 0;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brands_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.brands_item {
+  font-size: 33.74px;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #c1c1c1;
+
+  &--techlight {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+  }
+
+  &--ministore {
+    font-family: "Jost", sans-serif;
+    font-size: 45px;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
+  &--ultras {
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 37.74px;
+  }
+
+  &--swanky {
+    font-family: "Syne", sans-serif;
+    font-weight: 700;
+  }
+
+  &--emily {
+    font-family: "Lora", serif;
+  }
+}
+
+.brands_light {
+  font-weight: 300;
+}

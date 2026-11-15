@@ -1,3 +1,78 @@
-.latest-posts_list{
-  display: flex;
+  .latest-posts_list{
+    display: flex;
+     gap: 20px ;
+  }
+  .latest-posts_inner {
+    display: flex;
+    flex-direction: column;
+    gap: 39px}
+
+  .latest-posts_category{
+    background :#FF6543;
+    padding: 2px 8px ;
+    font-weight: 400;
+    text-transform: uppercase;
+  letter-spacing :0.08em;
+  align-self: flex-start;
+    color: #fff ;
+    font-size: 18px;
+  }
+
+    .latest-posts_img-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+
+
+    }
+  .latest-posts_image {
+    width: 100%;
+    aspect-ratio: 370 / 240;
+    object-fit: cover;
+  }
+
+
+  .latest-posts_title{
+    font-size: 22px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing:0.06em;
+    color:#272727;
+      line-height: 1.2;
+      min-height: 2.4em;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+
+
+  }.latest-posts_text{
+    font-size: 21px;
+    font-weight: 200;
+       display: -webkit-box;
+       -webkit-line-clamp: 3;
+       -webkit-box-orient: vertical;
+       overflow: hidden;
+
+   }
+.latest-posts_item{
+display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+  gap: 14px;
 }
+  .latest-posts_info{
+    display: flex; flex-direction: column; gap: 6px;
+    flex: 1;
+  }
+
+  .latest-posts_link{
+    text-decoration: underline;
+    color: #272727;
+    font-size: 21px;
+    font-weight: 200;
+    margin-top: auto;
+  }
+

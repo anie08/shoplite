@@ -7,6 +7,7 @@ import LimitedSale from "../../components/limitedSale/LimitedSale.jsx";
 import ItemLists from "../../components/itemLists/ItemLists.jsx";
 import RatingSystem from "../../components/ratingSystem/RatingSystem.jsx";
 import LatestPosts from "../../components/latestPosts/LatestPosts.jsx";
+import Brands from "../../components/brands/Brands.jsx";
 const Home = () => {
     return (
         <div className="home">
@@ -18,6 +19,7 @@ const Home = () => {
             <ItemLists/>
             <RatingSystem/>
             <LatestPosts/>
+            <Brands/>
 
         </div>
 )

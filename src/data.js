@@ -47,8 +47,13 @@ export const customerReviews = {
   ],
 };
 
-export const brands = ["techlight", "MiniStore.", "Ultras", "Swanky", "Emily"];
-
+export const brands = [
+  { id: 1, name: "Tech", nameLight: "light", modifier: "techlight" },
+  { id: 2, name: "MiniStore.", modifier: "ministore" },
+  { id: 3, name: "Ultras", modifier: "ultras" },
+  { id: 4, name: "Swanky", modifier: "swanky" },
+  { id: 5, name: "Emily", modifier: "emily" },
+];
 export const instagram = {
   title: "instagram #shoplite",
   images: [
@@ -63,6 +68,7 @@ export const instagram = {
 
 export const footer = {
   logo: "ShopLite",
+  image:'/logo/logo.png',
   about:
     "Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit. Gravida massa volutpat aenean odio erat nullam fringilla.",
   socials: [

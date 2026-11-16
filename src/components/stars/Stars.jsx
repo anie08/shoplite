@@ -17,14 +17,14 @@ const Stars = ({ rating }) => {
                         }
 
                         return (
-                            <div className="star">
+                            <div className="star"  key={index}>
                                 <img className="star_gray-star" src={starGrey} alt="star" />
                                 <img
                                     className="star_yellow-star"
                                     src={starYellow}
                                     style={{ width: width + "%" }}
                                     alt="star"
-                                    key={index}
+
                                 />
                             </div>
                         );

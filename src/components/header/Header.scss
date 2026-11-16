@@ -24,6 +24,9 @@
 .header-nav_menu{
   display: flex;
     justify-content: space-between;
+  @media (max-width: 1199px) {
+    display: none;
+  }
 }
 .header-nav_link {
   display: flex;
@@ -76,4 +79,14 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
+}
+.header-nav_burger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  cursor: pointer;
+
+  @media (max-width: 1199px) {
+    display: flex;
+  }
 }

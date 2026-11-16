@@ -4,10 +4,22 @@ import { NAVIGATION ,HEADER_ICONS } from "../../constants";
 import { topInfo } from "../../data";
 import logo from "../../assets/logo/Logo.svg"
 import classNames from "classnames";
-
+import { RxHamburgerMenu } from "react-icons/rx";
+import MobileMenu from "../mobileMenu/MobileMenu.jsx"
+import{useState} from "react";
 import { Icon } from "@iconify/react";
+
 const Header = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const closeMenu = () => {
+
+        setIsOpen(false);
+    };
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
     return (
+        <>
         <header className="header">
             <div className="header-top">
                 <div className="header-top_inner container">
@@ -27,6 +39,7 @@ const Header = () => {
             </span>
                     ))}
                 </div>
+            </div>
                 <div className="header-nav">
                     <div className="header-nav_inner container">
                         <Link className="header-nav_logo" to="/">
@@ -73,13 +86,16 @@ const Header = () => {
                         ))}
                     </ul>
 
-
+                        <button className="header-nav_burger" type="button" aria-label="Open menu" onClick={toggleMenu}>
+                            <RxHamburgerMenu size={24} />
+                        </button>
 
 </div>
                 </div>
-            </div>
 
         </header>
+    <MobileMenu closeMenu={closeMenu} isOpen={isOpen} />
+        </>
     );
 };
 

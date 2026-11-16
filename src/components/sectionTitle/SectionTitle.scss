@@ -16,6 +16,13 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   white-space: nowrap;
+  @media (max-width: 1199px) {
+    font-size: 26px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 22px;
+  }
 }
 
 .section-title_line {

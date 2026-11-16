@@ -8,7 +8,7 @@ const Brands = () => {
             {brands.map((item) => (
 
 
-<li className={`brands_item brands_item--${item.modifier}`}>
+<li className={`brands_item brands_item--${item.modifier}` } key={item.id}>
     {item.name}
     {item.nameLight && <span className="brands_light">{item.nameLight}</span>}
 </li>

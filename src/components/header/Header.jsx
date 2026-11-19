@@ -18,14 +18,24 @@ const Header = () => {
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+    const [isTopOpen, setIsTopOpen] = useState(
+        () => localStorage.getItem("topBarClosed") !== "true"
+    );
+
+    const closeTopBar = () => {
+        setIsTopOpen(false);
+        localStorage.setItem("topBarClosed", "true");
+    };
     return (
         <>
         <header className="header">
+            {isTopOpen && (
             <div className="header-top">
                 <div className="header-top_inner container">
                     {topInfo.map((item) => (
                         <span className="header-top_text" key={item.id}>
               {item.text}{" "}
+
                             {item.link?.to && (
                                 <Link className="header-top_link " to={item.link.to}>
                                     {item.link.label}
@@ -38,8 +48,11 @@ const Header = () => {
                             )}
             </span>
                     ))}
+                    <button className="header-top_close" type="button" aria-label="Close" onClick={closeTopBar}>
+                        <Icon icon="solar:close-circle-outline" />
+                    </button>
                 </div>
-            </div>
+            </div>)}
                 <div className="header-nav">
                     <div className="header-nav_inner container">
                         <Link className="header-nav_logo" to="/">

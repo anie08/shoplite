@@ -1,12 +1,21 @@
 .features_inner {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .features_item {
   display: flex;
   gap: 10px;
   width: calc((100% - 3 * 20px) / 4);
+
+  @media (max-width: 1199px) {
+    width: calc((100% - 20px) / 2);
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }
 
 .features_icon {

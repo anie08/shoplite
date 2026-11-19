@@ -5,6 +5,9 @@
   border-bottom: 1px solid #e3e3e3;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 767px) {
+    padding: 50px 0;
+  }
 }
 
 .brands_inner {
@@ -12,6 +15,11 @@
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  @media (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 50px;
+  }
 }
 
 .brands_item {
@@ -20,6 +28,9 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #c1c1c1;
+  @media (max-width: 767px) {
+    font-size: 24px;
+  }
 
   &--techlight {
     font-family: "Roboto", sans-serif;

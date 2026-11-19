@@ -7,6 +7,7 @@
   justify-content: space-between;
   padding-top: 11px;
   padding-bottom: 11px;
+  position: relative;
   @media (max-width: 767px) {
     flex-direction: column;
     align-items: center;
@@ -88,5 +89,23 @@
 
   @media (max-width: 1199px) {
     display: flex;
+    align-items: center;
   }
+}
+
+.header-top_close {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  font-size: 18px;
+  color: #272727;
+  background: none;
+  cursor: pointer;
+}
+.header-nav_logo{
+
+    display: flex;
+    align-items: center;
 }

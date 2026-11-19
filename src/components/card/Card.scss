@@ -10,6 +10,13 @@
   border-radius: 10px;
   min-width: 0;
   box-sizing: border-box;
+  @media (max-width: 1199px) {
+    width: calc((100% - 2 * 20px) / 3);
+  }
+
+  @media (max-width: 767px) {
+    width: calc((100% - 20px) / 2);
+  }
 }
 
 .card_img-box {

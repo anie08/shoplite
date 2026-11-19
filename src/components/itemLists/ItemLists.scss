@@ -19,7 +19,14 @@
   border: 1px solid #e0e0e0;
   padding: 40px 30px 40px 30px;
   border-radius: 10px;
+  @media (max-width: 1199px) {
+    flex: 1 1 calc((100% - 20px) / 2);
+  }
 
+  @media (max-width: 767px) {
+    flex: 1 1 100%;
+    padding: 30px 20px;
+  }
 }
 .item-lists_column .card:not(:last-child) {
   padding-bottom: 20px;
@@ -29,6 +36,9 @@
 .item-lists_inner{
   display: flex;
  gap:20px;
+  @media (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
 
 }
 .item-lists_column .card_img-box {

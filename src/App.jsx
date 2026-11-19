@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/layout/Layout";
 import Home from "./pages/home/Home.jsx";
-
+import AboutUs from "./pages/about/AboutUs.jsx"
 const App = () => {
     return (
         <BrowserRouter>
@@ -10,7 +10,7 @@ const App = () => {
                     <Route index element={<Home />} />
                 </Route>
 
-                    {/*<Route path="about" element={<About />} />*/}
+                    <Route path="about" element={<AboutUs />} />
                     {/*<Route path="shop" element={<Shop />} />*/}
                     {/*<Route path="blog" element={<Blog />} />*/}
                     {/*<Route path="contact" element={<Contact />} />*/}

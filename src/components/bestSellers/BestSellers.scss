@@ -36,4 +36,7 @@
     &--prev { left: 0; }
     &--next { right: 0; }
   }
+  @media (max-width: 767px) {
+    display: none;
+  }
 }

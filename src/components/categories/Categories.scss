@@ -12,6 +12,7 @@
 
 
 .categories_list { display: flex;
+  flex-wrap: wrap;
   gap: 20px; }
 
 .categories_item {

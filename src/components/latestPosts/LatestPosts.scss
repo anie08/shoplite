@@ -1,6 +1,10 @@
   .latest-posts_list{
     display: flex;
      gap: 20px ;
+    flex-wrap: wrap;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
   }
   .latest-posts_inner {
     display: flex;
@@ -62,6 +66,9 @@ display: flex;
   min-width: 0;
   flex-direction: column;
   gap: 14px;
+  @media (max-width: 1199px) {
+    flex: 1 1 calc((100% - 20px) / 2);
+  }
 }
   .latest-posts_info{
     display: flex; flex-direction: column; gap: 6px;

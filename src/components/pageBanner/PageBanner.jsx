@@ -1,5 +1,6 @@
 import React from 'react';
 import Breadcrumbs from "../breadcrumbs/Breadcrumbs.jsx";
+import "./PageBanner.scss"
 const PageBanner = ({title, lastLabel}) => {
     return (
         <section className="page-banner">

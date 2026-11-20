@@ -129,6 +129,18 @@ export const products = [
   { id: 10, name: "MacBook Pro", price: 400, category: "laptops", brand: "Apple", tags: ["modern"], image: "/images/products/laptops/macbook-pro.png" },
   { id: 11, name: "iPhone 11 Pro", price: 2000, category: "phones", brand: "Apple", tags: ["mobile"], image: "/images/products/phones/iphone-11-pro.png" },
   { id: 12, name: "Apple Watch Nike", price: 75, category: "watches", brand: "Apple", tags: ["cheap", "mobile"], image: "/images/products/watches/apple-watch-nike.png" },
+  { id: 13, name: "Iphone 15 Pro Max", price: 2000, category: "phones", brand: "Apple", tags: ["mobile", "modern"], image: "/images/products/phones/iphone-15-pro-max.png" },
+  { id: 14, name: "Wireless Headset", price: 500, category: "audio", brand: "Samsung", tags: ["modern"], image: "/images/products/audio/wireless-headset.jpg" },
+  { id: 15, name: "Iphone X Pro Max", price: 820, category: "phones", brand: "Apple", tags: ["mobile"], image: "/images/products/phones/iphone-x-pro-max.jpg" },
+  { id: 16, name: "Apple AirPod", price: 450, category: "audio", brand: "Apple", tags: ["white"], image: "/images/products/audio/apple-airpod.jpg" },
+  { id: 17, name: "Screen Touch Watch", price: 750, category: "watches", brand: "Samsung", tags: ["modern"], image: "/images/products/watches/screen-touch-watch.jpg" },
+  { id: 18, name: "Digital Watch", price: 660, category: "watches", brand: "Green", tags: ["cheap"], image: "/images/products/watches/digital-watch.jpg" },
+  { id: 19, name: "Wireless Joysticks", price: 350, category: "accessories", brand: "Samsung", tags: ["white"], image: "/images/products/accessories/wireless-joysticks.jpg" },
+  { id: 20, name: "Apple White AirPod", price: 330, category: "audio", brand: "Apple", tags: ["white", "mobile"], image: "/images/products/audio/apple-white-airpod.jpg" },
+  { id: 21, name: "Gimbal Stabilizer", price: 920, category: "accessories", brand: "Green", tags: ["modern"], image: "/images/products/accessories/gimbal-stabilizer.jpg" },
+  { id: 22, name: "White AirPods", oldPrice: 500, price: 410, category: "audio", brand: "Apple", tags: ["white"], image: "/images/products/audio/white-airpods.jpg" },
+  { id: 23, name: "Security CCTV Camera", oldPrice: 600, price: 500, category: "accessories", brand: "Samsung", tags: ["cheap"], image: "/images/products/accessories/security-cctv-camera.jpg" },
+  { id: 24, name: "Iphone 15 Pro Max Blue", price: 1900, category: "phones", brand: "Apple", tags: ["mobile"], image: "/images/products/phones/iphone-15-pro-max-2.png" },
 ];
 
 /* ============================================================

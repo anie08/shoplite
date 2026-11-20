@@ -17,6 +17,7 @@
   @media (max-width: 767px) {
     width: calc((100% - 20px) / 2);
   }
+  &--full { width: 100%; }
 }
 
 .card_img-box {

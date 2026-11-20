@@ -1,8 +1,8 @@
 import "./Card.scss";
-
-const Card = ({ image, name, price, oldPrice }) => {
+import classNames from "classnames";
+const Card = ({ image, name, price, oldPrice,isFull }) => {
     return (
-        <div className="card">
+        <div className={classNames('card',{'card--full':isFull})}>
             <div className="card_img-box">
                 <img className="card_img" src={image} alt={name} />
             </div>

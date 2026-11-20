@@ -1,0 +1,32 @@
+.page-banner{
+  background-color: #f5f5f5;
+}
+.page-banner_inner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 281px;
+  gap: 10px;
+  @media (max-width: 1199px) {
+    min-height: 220px;
+  }
+  @media (max-width: 767px) {
+    min-height: 160px;
+  }
+}
+.page-banner_title{
+  font-size: 60px;
+  font-weight: 200;
+  line-height: 1;
+  letter-spacing: 0.06em;
+color: #272727;
+  text-transform: uppercase;
+  text-align: center;
+  @media (max-width: 1199px) {
+    font-size: 44px;
+  }
+  @media (max-width: 767px){
+    font-size: 32px;
+  }
+}
